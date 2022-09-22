@@ -1,0 +1,127 @@
+Package: boost-uninstall
+Version: 1.80.0
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 0cc448a3119b53558370f526b34f239bf5c0ad8326f6915ac212d40f391aed16
+Description: Internal vcpkg port used to uninstall Boost
+Type: Port
+Status: install ok installed
+
+Package: boost-vcpkg-helpers
+Version: 1.80.0
+Depends: boost-uninstall
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: e9668e8388b01dd6b9ccd522bc412b44927d76c034d6fa024c1cdbea1690b3a3
+Description: Internal vcpkg port used to modularize Boost
+Type: Port
+Status: install ok installed
+
+Package: boost-config
+Version: 1.80.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 098c6ce2903766c563955ea2d5040a626667d4d89b769e4b4bb35e3fc42189b1
+Description: Boost config module
+Type: Port
+Status: install ok installed
+
+Package: boost-static-assert
+Version: 1.80.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 115994f2c175eb9c5661f4de871759f40ae927304e4a90590ee7ff5008a93bc5
+Description: Boost static_assert module
+Type: Port
+Status: install ok installed
+
+Package: boost-type-traits
+Version: 1.80.0
+Depends: boost-config, boost-static-assert, boost-vcpkg-helpers
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 1ecf485aa620fb1d36e4d16cebb88038a213984d4baf669ad773b37387147410
+Description: Boost type_traits module
+Type: Port
+Status: install ok installed
+
+Package: boost-assert
+Version: 1.80.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: df4108e9388fc47f0469768d428e5ac49a782b0e0a8527673e7f2386d1e1093a
+Description: Boost assert module
+Type: Port
+Status: install ok installed
+
+Package: boost-stl-interfaces
+Version: 1.80.0
+Depends: boost-assert, boost-config, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 3e2c44b43b82790897d0679d1d3567f3bd4679d0b934a872c1cd7ce3941cb7cc
+Description: Boost stl_interfaces module
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6a4f744b2e279a5e3fb36789dc3a15d6d1be764b8a3a2516f9ae89b434860e97
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-07-18
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9a0e02f8692217e7b03c486b66f3b3d94deefbadb159569993e0e64a82a4c8b5
+Type: Port
+Status: install ok installed
+
+Package: rsm-binary-io
+Version: 2.0.5
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: e9fd0c9998d63d63a3ffdeda59279d9ea480270bbf712cf0a3c6ba65859c5822
+Description: A binary i/o library for C++, without the agonizing pain
+Type: Port
+Status: install ok installed
+
+Package: fmt
+Version: 9.0.0
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 4fd66b5b957f5a7553982761cadea2adf223b7f72f688f1df9731890ff623b0f
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Type: Port
+Status: install ok installed
+
+Package: spdlog
+Version: 1.10.0
+Port-Version: 1
+Depends: fmt, vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 5a183b203777b326166e0d0592c94c0a4dec9ad2f3511e0e8912b616ebe8dca0
+Description: Very fast, header only, C++ logging library
+Type: Port
+Status: install ok installed
+
+Package: xbyak
+Version: 6.60
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 7ce4f38bd90f5c0a5fad1c63c58445108e693bb6a5ac2a3434841ae15892a578
+Description: Xbyak is a JIT assembler for x86(IA-32)/x64(AMD64, x86-64).
+Type: Port
+Status: install ok installed
+

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\CMakeFiles\HelpExtender.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\skse_plugins\HelpExtender\src\c++\PCH.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\skse_plugins\HelpExtender\src\c++\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\src\c++\ObScript\Help.h">
+      <Filter>src\ObScript</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\src\c++\PCH.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\include\Version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\CMakeFiles\HelpExtender.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\CMakeFiles\HelpExtender.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\CMakeFiles\HelpExtender.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\CMakeFiles\HelpExtender.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\skse_plugins\HelpExtender\src\c++\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\skse_plugins\HelpExtender\.clang-format" />
+    <None Include="C:\dev\skse_plugins\HelpExtender\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\dev\skse_plugins\HelpExtender\buildae\src\c++\version.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{227C48EE-00F6-32F9-983C-E5DFFF8D1067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B48AD55B-85F6-36FB-AE86-D05C3CCF16F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{7A6DCB4C-7194-39F1-8B44-014A9798B0F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{A3636FE6-91C4-38E6-85EC-F596729568E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObScript">
+      <UniqueIdentifier>{F13CD359-0F29-3252-8878-1A4613D29EF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
