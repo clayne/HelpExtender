@@ -1,0 +1,103 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"extern/CommonLibSSE/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"src/c++/CommonLibSSE/Release/CommonLibSSE.lib"
+			],
+			"targetId" : "CommonLibSSE::@148576451ef2aac78166",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/CommonLibSSE",
+			"exportName" : "CommonLibSSE-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "CommonLibSSE::@148576451ef2aac78166",
+					"index" : 2
+				}
+			],
+			"paths" : 
+			[
+				"src/c++/CommonLibSSE/CMakeFiles/Export/lib/cmake/CommonLibSSE/CommonLibSSE-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/CommonLibSSE",
+			"paths" : 
+			[
+				"buildae/src/c++/CommonLibSSE/CommonLibSSEConfig.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"extern/CommonLibSSE/include/RE",
+				"extern/CommonLibSSE/include/REL",
+				"extern/CommonLibSSE/include/SKSE"
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/c++/CommonLibSSE",
+		"source" : "extern/CommonLibSSE"
+	}
+}

@@ -1,0 +1,28 @@
+Detecting compiler hash for triplet x64-windows-static...
+Detecting compiler hash for triplet x64-windows...
+All requested packages are currently installed.
+Restored 0 package(s) from C:\Users\Kevin Weckworth\AppData\Local\vcpkg\archives in 226.8 us. Use --debug to see more details.
+Total elapsed time: 3.569 s
+The package boost is compatible with built-in CMake targets:
+
+    find_package(Boost REQUIRED [COMPONENTS <libs>...])
+    target_link_libraries(main PRIVATE Boost::boost Boost::<lib1> Boost::<lib2> ...)
+
+rsm-binary-io provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(binary_io CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE binary_io::binary_io)
+
+spdlog provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(spdlog CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE spdlog::spdlog spdlog::spdlog_header_only)
+
+xbyak provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(xbyak CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE xbyak::xbyak)
+
