@@ -41,14 +41,7 @@ set(Boost_USE_STATIC_LIBS ON)
 
 # ---- Dependencies ----
 
-if (DEFINED CommonLibPath AND NOT ${CommonLibPath} STREQUAL "" AND IS_DIRECTORY ${CommonLibPath})
-	add_subdirectory(${CommonLibPath} ${CommonLibName})
-else ()
-	message(
-		FATAL_ERROR
-		"Variable ${CommonLibName}Path is not set or in extern/."
-	)
-endif()
+find_package(CommonLibSSE REQUIRED)
 
 # ---- Add source files ----
 
@@ -107,8 +100,7 @@ target_include_directories(
 
 target_link_libraries(
 	${PROJECT_NAME}
-	PRIVATE
-		${CommonLibName}::${CommonLibName}
+	PUBLIC CommonLibSSE::CommonLibSSE
 )
 
 target_precompile_headers(
