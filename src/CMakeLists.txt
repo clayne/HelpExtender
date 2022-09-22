@@ -1,2 +1,2 @@
 add_subdirectory(c++)
-add_subdirectory(papyrus)
+# add_subdirectory(papyrus)
