@@ -1,12 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 set(NAME "HelpExtender")
 set(VERSION 1.2.0)
-set(AE_VERSION 1)
 
 # ---- Options ----
 
 option(COPY_BUILD "Copy the build output to the Skyrim directory." OFF)
-option(BUILD_SKYRIMAE "Build for Skyrim AE" OFF)
 
 # ---- Cache build vars ----
 
@@ -31,19 +29,11 @@ macro(find_commonlib_path)
 endmacro()
 
 set_from_environment(VCPKG_ROOT)
-if(BUILD_SKYRIMAE)
-	add_compile_definitions(SKYRIM_AE)
-	set(CommonLibName "CommonLibSSE")
-	set_from_environment(SkyrimAEPath)
-	set(SkyrimPath ${SkyrimAEPath})
-	set(SkyrimVersion "Skyrim AE")
-	set(VERSION ${VERSION}.${AE_VERSION})
-else()
-	set(CommonLibName "CommonLibSSE")
-	set_from_environment(Skyrim64Path)
-	set(SkyrimPath ${Skyrim64Path})
-	set(SkyrimVersion "Skyrim SSE")
-endif()
+set(CommonLibName "CommonLibSSE-NG")
+set_from_environment(SkyrimAEPath)
+set(SkyrimPath ${SkyrimAEPath})
+set(SkyrimVersion "Skyrim SE")
+set(VERSION ${VERSION})
 find_commonlib_path()
 message(
 	STATUS

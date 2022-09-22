@@ -1,5 +1,7 @@
 build/
 build-ae/
 build-se/
+buildae/
+buildse/
 CMakeUserPresets.json
 .vs/
