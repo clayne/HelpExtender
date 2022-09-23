@@ -69,9 +69,9 @@ source_group(
 
 # ---- Create DLL ----
 
-add_library(
+add_commonlibsse_plugin(
 	${PROJECT_NAME}
-	SHARED
+	SOURCES
 	${SOURCE_FILES}
 	${CMAKE_CURRENT_BINARY_DIR}/include/Version.h
 	${CMAKE_CURRENT_BINARY_DIR}/version.rc
@@ -96,11 +96,6 @@ target_include_directories(
 	PRIVATE
 		${CMAKE_CURRENT_BINARY_DIR}/include
 		${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-target_link_libraries(
-	${PROJECT_NAME}
-	PUBLIC CommonLibSSE::CommonLibSSE
 )
 
 target_precompile_headers(
