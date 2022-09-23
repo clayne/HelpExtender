@@ -8,38 +8,6 @@ option(COPY_BUILD "Copy the build output to the Skyrim directory." OFF)
 
 # ---- Cache build vars ----
 
-macro(set_from_environment VARIABLE)
-	if (NOT DEFINED ${VARIABLE} AND DEFINED ENV{${VARIABLE}})
-		set(${VARIABLE} $ENV{${VARIABLE}})
-	endif ()
-endmacro()
-
-macro(find_commonlib_path)
-	if (CommonLibName AND NOT ${CommonLibName} STREQUAL "")
-		# Check extern
-		find_path(CommonLibPath
-		include/REL/Relocation.h
-		PATHS extern/${CommonLibName})
-		if (${CommonLibPath} STREQUAL "CommonLibPath-NOTFOUND")
-			#Check path
-			set_from_environment(${CommonLibName}Path)
-			set(CommonLibPath ${${CommonLibName}Path})
-		endif()
-	endif()
-endmacro()
-
-set_from_environment(VCPKG_ROOT)
-set(CommonLibName "CommonLibSSE-NG")
-set_from_environment(SkyrimAEPath)
-set(SkyrimPath ${SkyrimAEPath})
-set(SkyrimVersion "Skyrim SE")
-set(VERSION ${VERSION})
-find_commonlib_path()
-message(
-	STATUS
-	"Building for ${SkyrimVersion} at ${SkyrimPath} with ${CommonLibName} at ${CommonLibPath}."
-)
-
 if (DEFINED VCPKG_ROOT)
 	set(CMAKE_TOOLCHAIN_FILE "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
 	set(VCPKG_TARGET_TRIPLET "x64-windows-static" CACHE STRING "")
